@@ -60,16 +60,15 @@ class StopsAdapter extends RecyclerView.Adapter<StopsAdapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView stop_name;
-        View sub_indicator1,sub_indicator2;
-        ImageView vertical_line;
+        View vertical_line;
 
         public ViewHolder(View itemView) {
             super(itemView);
 
             stop_name = (TextView)itemView.findViewById(R.id.stop_name);
-            sub_indicator1 = (View)itemView.findViewById(R.id.sub_indicator1);
-            sub_indicator2 = (View)itemView.findViewById(R.id.sub_indicator2);
-            vertical_line = (ImageView)itemView.findViewById(R.id.line);
+//            sub_indicator1 = (View)itemView.findViewById(R.id.sub_indicator1);
+//            sub_indicator2 = (View)itemView.findViewById(R.id.sub_indicator2);
+            vertical_line = (View)itemView.findViewById(R.id.line);
 
 
         }

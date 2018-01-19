@@ -1,37 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="48dp"
     android:background="@color/white"
     android:orientation="horizontal"
     >
 
-            <ImageView
-                android:id="@+id/indicator_imv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/stops_indicator_48"
-                />
+    <RelativeLayout
+        android:id="@+id/image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp">
 
-        <ImageView
+        <View
+            android:id="@+id/image"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="5dp"
+            android:background="@mipmap/stops_indicator_icon"
+            />
+
+        <View
             android:id="@+id/line"
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@mipmap/vertical_line"
-            android:layout_below="@+id/indicator_imv"
-            android:layout_alignBottom="@+id/stop_name"
-            android:layout_marginLeft="12dp"
-            />
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/image"
+            android:background="@mipmap/vertical_line" />
+
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/stop_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
         android:layout_marginRight="10dp"
-        android:text="bus route"
-        android:layout_marginTop="2dp"
-        android:layout_toRightOf="@+id/indicator_imv"
+        android:layout_marginBottom="5dp"
+        android:text="bus route name"
         android:textColor="@android:color/black" />
 
 
-</RelativeLayout>
+
+</LinearLayout>

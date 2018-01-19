@@ -44,6 +44,7 @@ public class BusRouteDetail  extends AppCompatActivity {
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(BusRouteDetail.this);
         stops_rv.setLayoutManager(linearLayoutManager);
+        stops_rv.setHasFixedSize(true);
 
         if (getIntent()!=null){
             BusRoutesModel busRoutesModel = (BusRoutesModel) getIntent().getSerializableExtra("routeModel");
