@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <declare-styleable name="CustomFontTextView">
+        <attr name="fontName"/>
+    </declare-styleable>
+
 </resources>

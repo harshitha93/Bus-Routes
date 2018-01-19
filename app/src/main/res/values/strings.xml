@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Bus Routes</string>
+    <string name="app_name"> Routes</string>
+
+
+    <string name="serif_small_caps">serif-smallcaps</string>
+    <string name="monospace">monospace</string>
+
 </resources>

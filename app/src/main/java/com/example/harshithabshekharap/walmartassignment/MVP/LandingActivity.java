@@ -49,5 +49,6 @@ public class LandingActivity extends MvpActivity<RoutesView,RoutesPresenter>{
     public RoutesPresenter createPresenter() {
         return new RoutesPresenter();
     }
+
 }
 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="fontName" format="enum">
+        <enum name="monospace" value="1" />
+        <enum name="serif-small-caps" value="2" />
+
+    </attr>
+</resources>

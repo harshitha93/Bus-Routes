@@ -69,14 +69,14 @@ public class BusRoutesAdapter extends RecyclerView.Adapter<BusRoutesAdapter.View
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        TextView route_name;
+        CustomTextView route_name;
         ImageView route_image;
         RelativeLayout parent_layout;
 
         public ViewHolder(View itemView) {
             super(itemView);
 
-            route_name = (TextView)itemView.findViewById(R.id.bus_route_name);
+            route_name = (CustomTextView) itemView.findViewById(R.id.bus_route_name);
             route_image = (ImageView) itemView.findViewById(R.id.route_image);
             parent_layout = (RelativeLayout)itemView.findViewById(R.id.parent_layout);
 

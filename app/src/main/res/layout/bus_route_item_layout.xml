@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="16dp">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
 
 <android.support.v7.widget.CardView
     android:layout_width="match_parent"
@@ -26,22 +27,28 @@
             android:layout_margin="2dp"
             />
 
-        <TextView
+        <com.example.harshithabshekharap.walmartassignment.CustomTextView
             android:id="@+id/bus_route_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Bus route"
             android:layout_toRightOf="@+id/route_image"
             android:textSize="20sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
             android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            app:fontName="serif-small-caps"
             android:layout_centerVertical="true"
             />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider_color"
+            android:layout_below="@+id/route_image"
+            android:layout_margin="2dp"
+            />
+
     </RelativeLayout>
-
-
 
 </android.support.v7.widget.CardView>
 

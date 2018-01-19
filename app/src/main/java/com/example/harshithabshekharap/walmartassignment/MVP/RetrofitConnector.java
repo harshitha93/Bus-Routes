@@ -36,7 +36,6 @@ public class RetrofitConnector {
         call.enqueue(new Callback<ResponseModel>() {
             @Override
             public void onResponse(Call<ResponseModel>call, Response<ResponseModel> response) {
-                //List<BusRoutesModel> movies = response.body();
                 if (response.code()==200){
                     Log.d("check", "Number of movies received: " + response.body().getBusRoutesModels().size());
 
